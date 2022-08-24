@@ -2,10 +2,8 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css';
 import { useSelector } from 'react-redux';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import {data} from "./redux/data"
 import Header from './components/Header';
 import Footer from './components/Footer';
-import Home from './components/Home'
 import Test from './components/Test';
 import Books from './components/Books';
 import Book from './components/Book';

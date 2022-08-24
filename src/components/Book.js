@@ -1,7 +1,5 @@
 import { useNavigate, useParams } from "react-router-dom";
 import { useSelector } from "react-redux/es/exports";
-import uniqid from 'uniqid';
-import { richManPoorMan } from "../redux/books/richManPoorMan";
 import { data } from "../redux/data";
 
 const Book = () => {
