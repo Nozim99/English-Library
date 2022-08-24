@@ -4,7 +4,6 @@ import { data } from "../redux/data";
 
 const Book = () => {
   const darkMode = useSelector(store => store.className.darkMode)
-  const navigate = useNavigate();
   const { idItem } = useParams();
   const bookData = data.filter((e) => e.id === +idItem)[0];
   const { degre, image, title, year, text, bookUrl, audioUrl, id } = bookData;

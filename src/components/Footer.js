@@ -1,7 +1,6 @@
-import { useDispatch, useSelector } from "react-redux/es/exports";
+import { useSelector } from "react-redux/es/exports";
 
 const Footer = () => {
-  const dispatch = useDispatch()
   const darkMode = useSelector(store => store.className.darkMode)
   return (
     darkMode ?

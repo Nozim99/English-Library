@@ -2,7 +2,7 @@ import { createSlice } from "@reduxjs/toolkit"
 
 export const classSlice = createSlice({
   name: "className",
-  initialState: { darkMode: localStorage.getItem('darkMode')},
+  initialState: { darkMode: JSON.parse(localStorage.getItem('darkMode'))},
   reducers: {
     handleDarkMode: (state, { payload }) => {
       state.darkMode = payload
