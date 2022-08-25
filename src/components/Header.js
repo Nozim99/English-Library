@@ -67,14 +67,14 @@ const Header = () => {
       <nav className="nav_dark d-flex justify-content-between align-items-center">
         <h1 onClick={() => navigate('')} className="nav_h1 d-inline-block cursor-pointer">{h1}</h1>
         <div className="nav__btns d-inline-block d-flex align-items-center">
-          <button onClick={() => dispatch(handleDarkMode(false))} className="btn mode__btn_dark d-flex align-items-center text-white"><div className="me-2"><span className="d-block text-start">Light</span><span className="d-block text-start">Mode</span></div> <i className="fa-solid fa-sun ms-2 moon_icon text-yellow"></i></button>
+          <button onClick={() => dispatch(handleDarkMode(false))} className="btn mode__btn_dark d-flex align-items-center text-white"><div className="me-2"><span className="mode__span_class1">Light</span><span className="mode__span_class">Mode</span></div> <i className="fa-solid fa-sun ms-2 moon_icon text-yellow"></i></button>
         </div>
       </nav>
       :
       <nav className="nav d-flex justify-content-between align-items-center">
         <h1 onClick={() => navigate('')} className="nav_h1 d-inline-block cursor-pointer">{h1}</h1>
         <div className="nav__btns d-inline-block d-flex align-items-center">
-          <button onClick={() => dispatch(handleDarkMode(true))} className="btn mode__btn d-flex align-items-center"><div className="me-2"><span className="d-block text-start">Dark</span><span className="d-block text-start">Mode</span></div> <i className="fa-solid fa-moon ms-2 moon_icon"></i></button>
+          <button onClick={() => dispatch(handleDarkMode(true))} className="btn mode__btn d-flex align-items-center"><div className="me-2"><span className="mode__span_class1">Dark</span><span className="mode__span_class">Mode</span></div> <i className="fa-solid fa-moon ms-2 moon_icon"></i></button>
         </div>
       </nav>
   );
