@@ -55,11 +55,13 @@
 .nav{
   box-shadow: 0 5px 10px rgb(196, 195, 195);
   height: 5.6rem;
+  padding: 0 1.5rem;
 }
 .nav_dark{
   box-shadow: 0 0 3rem #03dac5;
   height: 5.6rem;
   background-color: #272727;
+  padding: 0 1.5rem;
 }
 .footer{
   background: rgb(228, 228, 228);
@@ -112,6 +114,7 @@
   color: #939594;
 }
 .mode__btn_dark{
+  font-weight: 600;
   height: 100%;
   border-radius: 0;
 }
@@ -124,9 +127,11 @@
 .text-yellow{
   color: #F2F200;
 }
-
 @media (max-width: 425px) {
-  .nav_h1{
+  .nav, .nav_dark{
+    padding: 0 .5rem;
+  }
+    .nav_h1{
     font-size: 1.2rem;
   }
   .mode__btn{
